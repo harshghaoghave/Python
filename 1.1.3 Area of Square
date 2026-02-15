@@ -1,0 +1,8 @@
+length = int(input())
+area = length*length
+print(f"{area}")
+
+
+
+
+
