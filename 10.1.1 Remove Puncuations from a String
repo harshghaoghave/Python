@@ -1,0 +1,7 @@
+inp = input()
+ch = ""
+for i in inp:
+	if i.isalnum() or i.isspace():
+		ch = ch+i
+	
+print(ch)
