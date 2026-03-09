@@ -1,0 +1,10 @@
+inp = input()
+f= True
+l = len(inp)
+for i in range(l):
+	if inp [i]!= inp[l-1-i]:
+		f = False
+if f:
+	print('Palindrome')
+else:
+	print('Not a Palindrome') 
