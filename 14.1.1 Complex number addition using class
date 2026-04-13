@@ -1,0 +1,27 @@
+class Complex:
+	def initComplex(self):
+		self.real,self.imag=map(int,input().split())
+
+	def sum(self,C1,C2):
+		self.real=C1.real+C2.real
+		self.imag=C1.imag+C2.imag
+
+	def display(self):
+		if self.imag>=0:
+			print(f"{self.real} + {self.imag}i")
+		else:
+			print(f"{self.real} - {abs(self.imag)}i")
+
+
+# Create three instances
+c1 = Complex()
+c2 = Complex()
+c3 = Complex()
+
+# Initialize two complex numbers
+c1.initComplex()
+c2.initComplex()
+
+# Compute and display sum
+c3.sum(c1, c2)
+c3.display()
